@@ -6,6 +6,9 @@
     padding-left: 50px;
     padding-top: 50px;
   }
+  .hero .icon {
+    margin-top: 50%;
+  }
 }
 
 @media (min-width: 576px) {

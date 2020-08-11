@@ -24,6 +24,10 @@
 /*-----------------------------------
     1 - Header
 ------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: none;
   color: #6e6e6e;
@@ -131,20 +135,15 @@ header::after {
   min-height: 800px;
   padding-top: 20px;
 }
-.fa-angle-double-down {
-  width: 49px;
-  height: 49px;
-  position: absolute;
 
-  bottom: 3;
-  right: 0;
-
-  z-index: 9;
-  border-radius: 50%;
-  -webkit-transition: background-color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out;
-  size: 50px;
+.hero i {
+  margin-left: 30%;
+  margin-top: 27.9%;
+  font-size: 90px;
+  scroll-behavior: smooth;
+  color: whitesmoke;
 }
+
 .hero a {
   color: black;
 }
@@ -152,61 +151,7 @@ header::after {
 /*.hero {
   background-color: #ffb6c1;
 }*/
-.scrolldown {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  width: 40px;
-  height: 40px;
 
-  top: 0;
-  left: 0;
-  margin-top: 29%;
-  margin-left: 10%;
-  transform: translate(-80px) translateX(-50%) rotate(45deg);
-}
-.scrolldown span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
-  animation: animate 1.5s linear infinite;
-  opacity: 0;
-}
-.scrolldown span:nth-child(1) {
-  transform: translate(-15px, -15px);
-  animation-delay: -0.4s;
-}
-.scrolldown span:nth-child(2) {
-  transform: translate(0, 0);
-  animation-delay: -0.2s;
-}
-.scrolldown span:nth-child(3) {
-  transform: translate(15px, 15px);
-  animation-delay: 0s;
-}
-@keyframes animate {
-  0% {
-    top: -5px;
-    left: -5px;
-    opacity: 0;
-  }
-  25% {
-    top: 0px;
-    left: 0px;
-    opacity: 1;
-  }
-
-  100% {
-    top: 5px;
-    left: 5px;
-    opacity: 0;
-  }
-}
 /*-----------------------------------
     1 - CTA
 ------------------------------------*/
@@ -282,6 +227,23 @@ header::after {
   color: #26264b;
   font-family: "Times New Roman", Times, serif;
 }
+#btnScrollTop {
+  top: 650px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: black;
+  box-shadow: 0 0 10px black;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+
+  display: none;
+}
 /*-----------------------------------
     1 - Featured
 ------------------------------------*/
@@ -331,11 +293,18 @@ header::after {
 /*-----------------------------------
     1 - Recent Posts
 ------------------------------------*/
+#initiatives {
+  margin-top: 10%;
+}
 .recent-posts {
   padding: 95px 0 100px;
+  background-color: black;
 }
 .recent-posts .title {
-  padding-left: 50px;
+  text-align: center;
+}
+#initiatives p {
+  color: lightgray;
 }
 
 .recent-posts .row .col-lg-6:nth-of-type(odd) .post-thumb {
@@ -607,4 +576,10 @@ header::after {
 
 .footer .fa-stack:hover .fa-stack-2x {
   color: hotpink;
+}
+.footer .icon2 {
+  color: white;
+  margin-left: 45%;
+  font-size: 70px;
+  scroll-behavior: smooth;
 }
