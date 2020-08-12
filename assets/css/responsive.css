@@ -1,13 +1,24 @@
 /*-----------------------------------
     Small devices (landscape phones, 576px and up)
 ------------------------------------*/
+@media only screen and (max-width: 1200px) {
+  .hero {
+    background-repeat: no-repeat;
+    background-image: url("../images/paakhiv.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: auto;
+    position: relative;
+  }
+}
 @media (max-width: 576px) {
   #content {
     padding-left: 50px;
     padding-top: 50px;
   }
-  .hero .icon {
-    margin-top: 50%;
+  .hero i {
+    padding-left: 50px;
+    padding-top: 300px;
   }
 }
 

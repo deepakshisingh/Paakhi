@@ -125,8 +125,6 @@ header::after {
     1 - Hero
 ------------------------------------*/
 .hero {
-  width: 150%;
-  height: 200%;
   background-repeat: no-repeat;
   background-image: url("../images/Paakhi.svg");
   background-size: cover;
@@ -134,12 +132,12 @@ header::after {
   background-position: auto;
   position: relative;
   min-height: 800px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .hero i {
   margin-left: 30%;
-  margin-top: 27.9%;
+  margin-top: 35%;
   font-size: 90px;
   scroll-behavior: smooth;
   color: whitesmoke;
