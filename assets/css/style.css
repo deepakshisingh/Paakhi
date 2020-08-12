@@ -230,12 +230,11 @@ header::after {
   top: 650px;
   position: fixed;
   right: 10px;
-  bottom: 10px;
-  width: 60px;
-  height: 100px;
+  bottom: 50px;
+
   font-size: 40px;
-  background: black;
-  box-shadow: 0 0 10px black;
+
+  margin-bottom: 50%;
 
   cursor: pointer;
   border: none;
@@ -243,7 +242,7 @@ header::after {
   display: none;
 }
 #btnScrollTop i {
-  color: white;
+  color: hotpink;
 }
 
 /*-----------------------------------
