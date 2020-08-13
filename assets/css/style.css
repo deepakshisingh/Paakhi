@@ -132,7 +132,6 @@ header::after {
   background-position: auto;
   position: relative;
   min-height: 800px;
-  padding-top: 10px;
 }
 
 .hero i {
